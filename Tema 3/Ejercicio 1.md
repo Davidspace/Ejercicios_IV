@@ -14,8 +14,8 @@ El proceso de instalación de Docker es bastante sencillo. A continuación enume
 
 5. Comprobamos el estado del servicio mediante `sudo systemctl status docker`
 
-[!Estado del servicio Docker]()
+[!Estado del servicio Docker](https://github.com/Davidspace/Ejercicios_IV/blob/main/Tema%203/imagenes/servicio_docker.png)
 
 6. Usaremos la imagen de prueba para verificar que todo funciona como debería. Lo haremos con el siguiente comando: `sudo docker run hello-world`
 
-[!Hello world]()
+[!Hello world](https://github.com/Davidspace/Ejercicios_IV/blob/main/Tema%203/imagenes/docker_hello_world.png)
