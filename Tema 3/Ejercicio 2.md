@@ -36,4 +36,12 @@ Para llevar a cabo la instalación de una imagen alternativa de Ubuntu llevaremo
 
 [Creación del contenedor](https://github.com/Davidspace/Ejercicios_IV/blob/main/Tema%203/imagenes/creacion_contenedor_centos.png)
 
+8. Actuamos de igual forma con la imagen que incluya MongoDB.
+
+[!Imagen MongoDB](https://github.com/Davidspace/Ejercicios_IV/blob/main/Tema%203/imagenes/imagen_MongoDB.png)
+
+[!Pull a la imagen](https://github.com/Davidspace/Ejercicios_IV/blob/main/Tema%203/imagenes/descarga_imagen_MongoDB.png)
+
+[Creación del contenedor](https://github.com/Davidspace/Ejercicios_IV/blob/main/Tema%203/imagenes/creacion_contenedor_MongoDB.png)
+
 
