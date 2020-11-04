@@ -20,10 +20,10 @@ Descrita la estructura del fichero de configuración, procedo a crear el mio pro
 
 ### .travis.yml
 
-<code>
+```
 before_install:
   docker build -t davidspace/aroundtheworld .
 
 script:
   docker run -t -v \`pwd\`:/test davidspace/aroundtheworld
-</code>
+```
