@@ -16,7 +16,7 @@ Este fichero escrito en YAML contiene las siguientes partes:
 
 En mi caso no será necesario especificar ni el lenguaje que utilizaré ni las versiones del mismo, ya que los tests se ejecutarán dentro de mi contenedor Docker, el cual dispone de toda la información necesaria.
 
-Descrita la estructura del fichero de configuración, procedo a crear el mio propio.
+Descrita la estructura del fichero de configuración, procedo a crear el mio propio, en el cual construyo un contenedor a partir de la imagen generada por el Dockerfile de mi repositorio y ejecuto en él los tests que se hallan en el directorio /test.
 
 ### .travis.yml
 
