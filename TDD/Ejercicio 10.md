@@ -25,5 +25,5 @@ before_install:
   docker build -t davidspace/aroundtheworld .
 
 script:
-  docker run -t -v \`pwd\`:/test davidspace/aroundtheworld
+  docker run -t -v `pwd`:/test davidspace/aroundtheworld
 ```
