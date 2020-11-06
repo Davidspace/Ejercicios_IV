@@ -1,6 +1,6 @@
 # Configuración de Travis para mi aplicación
 
-En el anterior ejercicio me dí de alta en Travis y activé el repositorio en el que se va a aplicar la integración continua. El último paso que debo de dar es crear un fichero de configuración para que se ejecute la integración y añadirlo al repositorio.
+En el anterior ejercicio me dí de alta en Travis y activé el repositorio en el que se va a aplicar la integración continua. El último paso que debo de dar es crear un fichero de configuración con las directrices para Travis y añadirlo al repositorio.
 
 ## Creación del fichero de configuración .travis.yml
 
