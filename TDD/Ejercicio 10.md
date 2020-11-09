@@ -17,7 +17,7 @@ Este fichero escrito en YAML contiene las siguientes partes:
 En mi caso no será necesario especificar ni el lenguaje que utilizaré ni las versiones del mismo, ya que los tests se ejecutarán dentro de mi contenedor Docker, el cual dispone de toda la información necesaria. 
 Sin embargo, si no especifico ningún lenguaje, Travis tomará **Ruby** por defecto e intentará llevar a cabo la instalación de Bundle. Dado que este comportamiento no lo necesito y consume recursos de manera innecesaria, añadiré en el campo **language** el valor **minimal**, que se trata de una imagen que no está enfocada en ningún lenguaje en particular, por lo que no habrá comandos de instalación o scripts por defecto que no aporten nada.
 
-Descrita la estructura del fichero de configuración, procedo a crear el mio propio, en el cual construyo un contenedor a partir de la imagen generada por el Dockerfile de mi repositorio y ejecuto en él los tests que se hallan en el directorio /test.
+Descrita la estructura del fichero de configuración, procedo a crear el mio propio, en el cual directamente utilizo la orden **docker run** para ejecutar dentro del contenedor los tests. El uso de esta orden lleva a cabo implícitamente el **pull** de la imagen desde Docker Hub. Además, utilizo la variable de Travis **$TRAVIS_BUILD_DIR** para indicar la ruta del directorio en el que Travis ha llevado a cabo el build, que en mi caso se trata del directorio raiz de mi repositorio.
 
 ### .travis.yml
 
@@ -25,11 +25,8 @@ Descrita la estructura del fichero de configuración, procedo a crear el mio pro
 language:
   - minimal
 
-before_install:
-  - docker build -t davidspace/aroundtheworld .
-
 script:
-  - docker run -t -v `pwd`:/test davidspace/aroundtheworld
+  - docker run -t -v $TRAVIS\_BUILD\_DIR:/test davidspace/aroundtheworld
 ```
 
 ### Build exitoso
