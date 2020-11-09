@@ -29,7 +29,7 @@ language:
   - minimal
 
 script:
-  - docker run -t -v $TRAVIS\_BUILD\_DIR:/test davidspace/aroundtheworld
+  - docker run -t -v $TRAVIS_BUILD_DIR:/test davidspace/aroundtheworld
 ```
 
 ### Build exitoso
