@@ -20,7 +20,9 @@ Sin embargo, podemos observar que, en vista de la utilización del contenedor co
 
 Dado esto, en Travis se nos abre la posibilidad de prescindir de dar esta información. Sin embargo, ante la falta de la especificación de un lenguaje determinado, Travis toma Ruby como lenguaje por defecto. Es aqui cuando, tras una breve búsqueda por la documentación, he encontrado una opción que casa perfectamente con mis necesidades actuales: el uso de la imagen **minimal**. Esta imagen no está enfocada en ningún lenguaje en particular, por lo que no se ejecutarán comandos de instalación o scripts por defecto propios de un lenguaje determinado que no aporten nada en el contexto actual debido a la situación expuesta. Esto me permite reducir los recursos necesarios para poner en funcionamiento la integración continua en mi proyecto.
 
-Descrita la estructura del fichero de configuración que utilizaré, procedo a crear el mio propio, en el cual directamente utilizo la orden **docker run** para ejecutar dentro del contenedor los tests. El uso de esta orden lleva a cabo implícitamente el **pull** de la imagen desde Docker Hub en el caso de que esta no esté almacenada de manera local, por lo que no es necesario su uso de manera explícita anterior a la ejecución del propio contenedor. Además, utilizo la variable de Travis **$TRAVIS_BUILD_DIR** para indicar la ruta del directorio en el que Travis ha llevado a cabo el build, que en mi caso se trata del directorio raiz de mi repositorio.
+Del mismo modo, el uso del contenedor me exime de la necesidad de instalar las dependencias fuera de él, por lo que los campos **before_install** e **install** también pueden ser omitidos.
+
+Descrita la estructura del fichero de configuración que utilizaré, procedo a crear el mio propio, en el cual directamente utilizo la orden **docker run** en el campo **script** para ejecutar dentro del contenedor los tests. El uso de esta orden lleva a cabo implícitamente el **pull** de la imagen desde Docker Hub en el caso de que esta no esté almacenada de manera local, por lo que no es necesario su uso de manera explícita anterior a la ejecución del propio contenedor. Además, utilizo la variable de Travis **$TRAVIS_BUILD_DIR** para indicar la ruta del directorio en el que Travis ha llevado a cabo el build, que en mi caso se trata del directorio raiz de mi repositorio.
 
 ### .travis.yml
 
@@ -32,8 +34,5 @@ script:
   - docker run -t -v $TRAVIS_BUILD_DIR:/test davidspace/aroundtheworld
 ```
 
-### Build exitoso
+[Aquí](https://travis-ci.com/github/Davidspace/AroundTheWorld/builds/199724060) puede consultar un build exitoso.
 
-![Build](https://github.com/Davidspace/Ejercicios_IV/blob/main/TDD/imagenes/travis6.png)
-
-![Log del build](https://github.com/Davidspace/Ejercicios_IV/blob/main/TDD/imagenes/travis7.png)
