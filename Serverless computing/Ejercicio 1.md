@@ -14,23 +14,15 @@ Vercel es una empresa que ofrece en su servicio en el cloud la posibilidad de tr
 
 ![Importar repositorio de Git](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel2.png)
 
-3. Facilito la URL del repositorio que quiero importar
+3. Facilito la URL del repositorio que quiero importar. En este caso he creado un repositorio para llevar a cabo pruebas en él
 
 ![Añado URL de mi repositorio de Git](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel3.png)
 
-4. Confirmo que mi cuenta de GitHub es realmente mia
-
-![Confirmación de cuenta de GitHub](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel4.png)
-
-5. Selecciono los repositorios en los que quiero instalar Vercel y doy comienzo a dicha instalación
-
-![Instalación de Vercel en los repositorios seleccionados](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel5.png)
-
-6. Selecciono el directorio en el que quiero llevar a cabo dicha instalación, es decir, el directorio raíz de mi repositorio
+4. Selecciono el directorio en el que quiero llevar a cabo dicha instalación, es decir, el directorio raíz de mi repositorio
 
 ![Selección del directorio raíz de mi repositorio](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel6.png)
 
-7. Elijo el nombre del proyecto y llevo a cabo el despliegue.
+5. Elijo el nombre del proyecto y llevo a cabo el despliegue.
 
 ![Nombre del proyecto y despliegue](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel7.png)
 
@@ -47,14 +39,14 @@ Ya me encontraba dado de alta en Firebase debido a que basta con contar con una 
 
 ## Trabajar de manera local con ambos sistemas
 
-Para trabajar tanto con Vercel como con Firebase de manera local será necesario la descarga de un SDK (Software development kit). En mi caso utilizaré **ngrok** para Firebase, una aplicación que me permite servir desde mi ordenador a una dirección web. Los pasos a seguir para su descarga y configuración se encuentran [aquí](https://ngrok.com/download).
+Para trabajar tanto con Vercel como con Firebase de manera local será necesario la descarga de un SDK (Software development kit).
 
-**Ngrok** funcionando en mi equipo:
-
-![Comando help de Ngrok](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/ngrok1.png)
-
-Para Vercel utilizaré su cliente, Vercel CLI. Lo descargo e instalo de la siguiente manera:
+Para Vercel utilizaré Vercel CLI. Lo descargo e instalo de la siguiente manera:
 
 `npm i -g vercel`
 
 ![Vercel CLI funcionando](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel8.png)
+
+Descargaré el SDK de Firebase de la siguiente manera:
+
+`curl -sL https://firebase.tools | bash`
