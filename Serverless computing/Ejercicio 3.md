@@ -15,6 +15,6 @@ Esta función es asíncrona, de modo que podemos simplemente devolver la respues
 
 Para llevar a cabo el despliegue de esta función en Netlify en primer lugar crearé un directorio **api** en mi [repositorio para pruebas de Netlify](https://github.com/Davidspace/Pruebas_Netlify) y dentro de él incluiré el fichero **ejercicio3.js** que contendrá la función expuesta. A continuación, simplemente tengo que hacer push al repositorio de los cambios llevados a cabo, lo cuál activará el despliegue automático de Vercel.
 
-![Despligue en Netlify](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/deployed-netlify.png)
+![Despligue en Netlify](https://github.com/Davidspace/Ejercicios_IV/blob/main/Serverless%20computing/imagenes/deployed-netlify.png)
 
 Puede ver el correcto funcionamiento de la función clickando [aquí](https://pruebasnetlify.netlify.app/api/ejercicio3.js)
