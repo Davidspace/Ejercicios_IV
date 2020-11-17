@@ -47,8 +47,14 @@ Ya me encontraba dado de alta en Firebase debido a que basta con contar con una 
 
 ## Trabajar de manera local con ambos sistemas
 
-Para trabajar tanto con Vercel como con Firebase de manera local será necesario la descarga de un SDK (Software development kit). En mi caso utilizaré **ngrok**, una aplicación que me permite servir desde mi ordenador a una dirección web. Los pasos a seguir para su descarga y configuración se encuentran [aquí](https://ngrok.com/download).
+Para trabajar tanto con Vercel como con Firebase de manera local será necesario la descarga de un SDK (Software development kit). En mi caso utilizaré **ngrok** para Firebase, una aplicación que me permite servir desde mi ordenador a una dirección web. Los pasos a seguir para su descarga y configuración se encuentran [aquí](https://ngrok.com/download).
 
 **Ngrok** funcionando en mi equipo:
 
 ![Comando help de Ngrok](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/ngrok1.png)
+
+Para Vercel utilizaré su cliente, Vercel CLI. Lo descargo e instalo de la siguiente manera:
+
+`npm i -g vercel`
+
+![Vercel CLI funcionando](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel8.png)
