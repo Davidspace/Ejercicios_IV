@@ -20,11 +20,11 @@ Vercel es una empresa que ofrece en su servicio en el cloud la posibilidad de tr
 
 4. Selecciono el directorio en el que quiero llevar a cabo dicha instalación, es decir, el directorio raíz de mi repositorio
 
-![Selección del directorio raíz de mi repositorio](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel6.png)
+![Selección del directorio raíz de mi repositorio](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel4.png)
 
 5. Elijo el nombre del proyecto y llevo a cabo el despliegue.
 
-![Nombre del proyecto y despliegue](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel7.png)
+![Nombre del proyecto y despliegue](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel5.png)
 
 
 ## Firebase
@@ -45,8 +45,15 @@ Para Vercel utilizaré Vercel CLI. Lo descargo e instalo de la siguiente manera:
 
 `npm i -g vercel`
 
-![Vercel CLI funcionando](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel8.png)
+Lo pondremos en funcionamiento ejecutando el comando **vercel**. Una vez logueados mediante nuestro e-mail y confirmado el posterior correo de confirmación, ejecutamos nuevamente **vercel**. A continuación, se nos indica que para desplegar para producción simplemente debemos ejecutar el comando **vercel --prod**.
 
-Descargaré el SDK de Firebase de la siguiente manera:
+![Vercel CLI funcionando](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/vercel6.png)
+
+
+Para llevar a cabo la descarga del SDK de Firebase, Firebase CLI, ejecutaré el siguiente comando:
 
 `curl -sL https://firebase.tools | bash`
+
+Para acceder al mismo ejecutamos **firebase login**, con lo que conectaremos nuestro PC a Firebase, pudiendo acceder a los proyectos almacenados en la plataforma de manera local.
+
+![Firebase conectado](https://github.com/Davidspace/Ejercicios_IV/blob/main/%20Serverless%20computing/imagenes/firebase2.png)
