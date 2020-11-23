@@ -49,6 +49,8 @@ Lo pondremos en funcionamiento ejecutando el comando **vercel**. Una vez loguead
 
 ![Vercel CLI funcionando](https://github.com/Davidspace/Ejercicios_IV/blob/main/Serverless%20computing/imagenes/vercel6.png)
 
+![Proyecto actualizado](https://github.com/Davidspace/Ejercicios_IV/blob/main/Serverless%20computing/imagenes/vercel7.png)
+
 
 Para llevar a cabo la descarga del SDK de Firebase, Firebase CLI, ejecutaré el siguiente comando:
 
