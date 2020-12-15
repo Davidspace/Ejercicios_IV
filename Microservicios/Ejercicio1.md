@@ -4,7 +4,7 @@ En este ejercicio llevaré a cabo la instalación del servidor de configuración
 
 ## Instalación de etcd3 y etcdctl
 
-Para llevar a cabo la instalación de ambas herramientas he llevado a cabo los siguientes [pasos](https://computingforgeeks.com/how-to-install-etcd-on-ubuntu-18-04-ubuntu-16-04/)
+Para llevar a cabo la instalación de ambas herramientas en mi equipo he llevado a cabo los siguientes [pasos](https://computingforgeeks.com/how-to-install-etcd-on-ubuntu-18-04-ubuntu-16-04/). Además, lo he instalado dentro de mi proyecto Node guardando la dependencia creada mediante el comando `npm install --save-dev etcd3`
 
 ## Bibliotecas
 

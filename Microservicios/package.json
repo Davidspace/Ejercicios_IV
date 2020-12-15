@@ -1,0 +1,14 @@
+{
+  "name": "microservicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "programa_ejercicio1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "etcd3": "^1.1.0"
+  }
+}
