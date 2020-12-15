@@ -1,0 +1,22 @@
+{
+  "name": "ejercicios_iv",
+  "version": "1.0.0",
+  "description": "Ejercicios de autoevaluación de la asignatura IV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidspace/Ejercicios_IV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidspace/Ejercicios_IV/issues"
+  },
+  "homepage": "https://github.com/Davidspace/Ejercicios_IV#readme",
+  "devDependencies": {
+    "etcd3": "^1.1.0"
+  }
+}
