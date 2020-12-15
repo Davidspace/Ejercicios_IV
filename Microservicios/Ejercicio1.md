@@ -12,6 +12,6 @@ En la [documentación de ectd](https://etcd.io/docs/v3.3.12/integrations/) encon
 
 ## Ejemplo de almacenamiento
 
-En este [fichero](https://github.com/Davidspace/Ejercicios_IV/blob/main/Microservicios/programa_ejercicio1.js) se encuentra el programa de ejemplo que he utilizado, en el cual se recupera una clave previamente establecida.
+En este [fichero](https://github.com/Davidspace/Ejercicios_IV/blob/main/Microservicios/programa_ejercicio1.js) se encuentra el programa de ejemplo que he utilizado, en el cual se recupera una clave previamente establecida e inmediatamente después se eliminan todas las claves almacenadas.
 
 Para establecer dicha clave desde la línea de órdenes con **etcdctl** debemos ejecutar los siguientes comandos: `export ETCDTCL_API=3` y `/usr/local/bin/etcdctl put clave ejercicio1`

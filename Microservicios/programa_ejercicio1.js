@@ -4,4 +4,6 @@ const client = new Etcd3();
 (async () => {
   const clave = await client.get('clave').string();
   console.log('El valor de la clave almacenada es:', clave);
+
+	await cliente.delete().all()
 })();
